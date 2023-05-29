@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,57 +16,57 @@
         </header>
     
         <main>
-            <div class="data">
-                <div class="row justify-content-center text-center py-5">
-                    <div class="col-4">
-                        <label for="user-data">Nome Cognome</label>
+            <div class="data container">
+                <div class="row justify-content-center py-4">
+                    <div class="col-4 text-center">
+                        <label for="user-data" class="pb-3"><b>Nome Cognome</b></label>
                         <input type="text" id="user-data">
                     </div>
-                    <div class="col-4">
-                        <label for="distance">Km da percorre</label>
+                    <div class="col-4 text-center">
+                        <label for="distance" class="pb-3"><b>Km da percorre</b></label>
                         <input type="text" id="distance">
                     </div>
-                    <div class="col-4">
-                        <label for="age" class="d-block">Facia d'età</label>
+                    <div class="col-4 text-center">
+                        <label for="age" class="d-block pb-3"><b>Facia d'età</b></label>
                         <select name="age" id="age">
-                            <option value="young">Minorenne</option>
                             <option value="adult">Adulto</option>
+                            <option value="young">Minorenne</option>
                             <option value="old">Over 65</option>
                         </select>
                     </div>
-                    <div class="bottoni">
-                        <div class="btn btn-primary submit">Genera</div>
+                    <div class="bottoni d-flex justify-content-center">
+                        <div class="btn btn-primary submit mx-3">Genera</div>
                         <div class="btn btn-warning reset">Annulla</div>
                     </div>
                 </div>
             </div>
-            <div class="ticket text-center my-5 visually-hidden">
+            <div class="ticket container text-center visually-hidden my-5"> 
                 <h2 class="text-white"><b>IL TUO BIGLIETTO</b></h2>
-                <div class="row py-5">
+                <div class="row justify-content-center py-4">
                     <div class="col-4">
                         <h5>DETTAGLIO PASSEGGERO</h5>
-                        <div class="psg-data pt-3">
-                            <h5>NOME DEL PASSEGGERO</h5>
+                        <div class="psg-data d-flex flex-column justify-content-center">
+                            <h5 class="pt-3">NOME DEL PASSEGGERO</h5>
                             <div id="passenger"></div>
                         </div>
                     </div>
                     <div class="col-8">
                         <table class="table">
                             <thead> 
-                              <tr>
+                                <tr>
                                 <th scope="col">Offerta</th>
                                 <th scope="col">Carrozza</th>
                                 <th scope="col">Codice CP</th>
                                 <th scope="col">Costo biglietto</th>
-                              </tr>
+                                </tr>
                             </thead>
                             <tbody>
-                              <tr>
+                                <tr>
                                 <td id="ticket-type"></td>
                                 <td id="coach"></td>
                                 <td id="ticket-number"></td>
                                 <td id="ticket-price"></td>
-                              </tr>
+                                </tr>
                             </tbody>
                         </table>
                     </div>

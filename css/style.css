@@ -5,18 +5,10 @@ body {
 
 
 /****************** LAYOUT *****************/
-.data {
-    height: 200px;
-    width: 100%;
-}
 
 .col-4 {
     height: 100px;
     width: 300px;
-}
-
-.ticket {
-    height: 300px;
 }
 
 .ticket .row {
@@ -29,9 +21,11 @@ body {
 
 /****************** STYLE *****************/
 
-.ticket .td, .ticket .tr, .ticket .th {
+.ticket th, .ticket td {
     border-style: none;
+    padding-bottom: 50px ;
 }
+
 
 .row {
     background-color: white;
@@ -45,8 +39,12 @@ h5 {
 
 .psg-data {
     background-color: gray;
-    border-radius: 25px;
+    border-radius: 10px;
     padding-bottom: 50px;
+}
+
+#age {
+    padding: 5px 5px;
 }
 
 #passenger {
