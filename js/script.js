@@ -7,9 +7,15 @@ const distance = document.getElementById('distance');
 const buttonSubmit = document.getElementById('submit');
 
 
-console.log(userName, distance, buttonSubmit)
+// Stabilisco la fascia di età del utente al click del bottone
 
-// Stabilisco la fascia di etò del utente
+buttonSubmit.addEventListener('click', function()) {
+    
+    const userAge = document.getElementById('age').value
+    
+    console.log(userName, distance, userAge)
+}
+ 
 
-const userAgeYoung = document.
+
 
