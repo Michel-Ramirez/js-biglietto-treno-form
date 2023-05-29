@@ -1,3 +1,29 @@
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
+
+/****************** LAYOUT *****************/
+.data {
+    height: 200px;
+    width: 100%;
+}
+
+.col-4 {
+    height: 100px;
+    width: 300px;
+}
+
+.ticket {
+    height: 300px;
+}
+
+.ticket .row {
+    border: 1px solid black;
+}
+
+.ticket .col-4, .col-8{
+    height: 200px;
+}
+
+/****************** STYLE *****************/

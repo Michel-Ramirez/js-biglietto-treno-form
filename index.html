@@ -10,6 +10,69 @@
     <title>Il tuo biglietto</title>
 </head>
 <body>
+    <div class="container">
+        <header>
+            <h2 class="text-center my-5">CALCOLA IL PREZZO DEL TUO BISGLIETTO</h2>
+        </header>
     
+        <main>
+            <div class="data">
+                <div class="row justify-content-center text-center pt-4">
+                    <div class="col-4">
+                        <label for="user-data">Nome Cognome</label>
+                        <input type="text" id="user-data">
+                    </div>
+                    <div class="col-4">
+                        <label for="distance">Km da percorre</label>
+                        <input type="text" id="distance">
+                    </div>
+                    <div class="col-4">
+                        <label for="age" class="d-block">Facia d'età</label>
+                        <select name="age" id="age">
+                            <option value="young">Minorenne</option>
+                            <option value="adult">Adulto</option>
+                            <option value="old">Over 65</option>
+                        </select>
+                    </div>
+                    <div class="bottoni">
+                        <div class="btn btn-primary">Genera</div>
+                        <div class="btn btn-primary">Annulla</div>
+                    </div>
+                </div>
+            </div>
+            <div class="ticket text-center my-5">
+                <h2>IL TUO BIGLIETTO</h2>
+                <div class="row">
+                    <div class="col-4">
+                        <h5>DETTAGLIO PASSEGGERI</h5>
+                        <div class="passenger pt-3">
+                            <h5>NOME DEL PASSEGGERO</h5>
+                            <div id="passenger"></div>
+                        </div>
+                    </div>
+                    <div class="col-8">
+                        <table class="table">
+                            <thead>
+                              <tr>
+                                <th scope="col">Offerta</th>
+                                <th scope="col">Carrozza</th>
+                                <th scope="col">Codice CP</th>
+                                <th scope="col">Costo biglietto</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td id="ticket-type"></td>
+                                <td id="coach"></td>
+                                <td id="ticket-number"></td>
+                                <td id="ticket-price"></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
 </body>
 </html>
