@@ -1,5 +1,6 @@
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #B91450;
 }
 
 
@@ -27,3 +28,28 @@ body {
 }
 
 /****************** STYLE *****************/
+
+.ticket .td, .ticket .tr, .ticket .th {
+    border-style: none;
+}
+
+.row {
+    background-color: white;
+    border-radius: 20px;
+}
+
+h5 {
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.psg-data {
+    background-color: gray;
+    border-radius: 25px;
+    padding-bottom: 50px;
+}
+
+#passenger {
+    font-size: 1.5rem;
+    color: white;
+}
