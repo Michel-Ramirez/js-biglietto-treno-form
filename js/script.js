@@ -24,8 +24,9 @@ buttonSubmit.addEventListener('click', function() {
     
     //controllo che l'utente abbia compilato tutti i campi correttamente
 
-    // if (isNaN(userName == '') || isNaN(distance)) {
-    //     alert ('Devi compilare correttamente tutti i campi')
+    // if (!userName || isNaN(distance)) {
+    //     alert ('Devi compilare correttamente tutti i campi');
+    //     return;
     // }
 
     //Calcolo il prezzo standard del biglietto 
@@ -56,16 +57,17 @@ buttonSubmit.addEventListener('click', function() {
     // Stampiamo sul DOM il prezzo finela del biglietto
     passenger.innerText += userName.value.trim();
     
-    //Togliemo la classe hidden dal ticket del utente 
-    myTicket.classList.remove('visually-hidden')
     
     // Randomizziamo il numero di serie del biglietto e lo stampiamo sul biglietto
-    const randomNumber = Math.floor(Math.random()*1000);
+    const randomNumber = Math.floor(Math.random() * 10000000) + 1;
     ticketNumber.innerText += randomNumber
     
     //Randomizziamo la assegnazione della carrozza e la stampiamo sul biglietto
-    const randomCoachNumber = Math.floor(Math.random()*12);
+    const randomCoachNumber = Math.floor(Math.random()*12) + 1;
     coachNumber.innerText += randomCoachNumber
+    
+    //Togliemo la classe hidden dal ticket del utente 
+    myTicket.classList.remove('visually-hidden')
     
     //Stampiamo sul biglietto il tipo di biglietto
 
